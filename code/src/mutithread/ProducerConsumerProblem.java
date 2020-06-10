@@ -30,7 +30,7 @@ public class ProducerConsumerProblem {
         }
     }
 
-    public static  void produce()  {
+    public static  void produce() {
         lock.lock();
         while(list.size()==MAX_SIZE){
             System.out.println("仓库已满，容量："+list.size());
